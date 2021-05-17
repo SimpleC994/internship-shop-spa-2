@@ -15,7 +15,10 @@ function App() {
         </Col>
         <Col lg={10} xs={12}>
           <Switch>
-            <Route path="/products/:id" render={(props) => <ProductList />} />
+            <Route
+              path="/products/:id"
+              render={(props) => <ProductList {...props} />}
+            />
           </Switch>
         </Col>
       </Row>
