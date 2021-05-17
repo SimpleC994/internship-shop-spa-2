@@ -14,7 +14,7 @@ const Sidebar = (props) => {
   }, [props]);
 
   return (
-    <Nav className="col-md-12 d-md-block bg-light sidebar">
+    <Nav className="d-md-block bg-light sidebar">
       <div className="sidebar-sticky"></div>
       {categories.map((c) => (
         <Nav.Item>

@@ -27,7 +27,7 @@ const ApiClient = {
 const ProductCategories = {
   all: async () => {
     const { categories } = await ApiClient.get("category");
-
+    console.log(categories);
     return categories.map((c) => new Category(c.categoryId, c.name));
   },
 };
